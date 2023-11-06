@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: cubic-bezier(1, 2, 4, 3);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.common-bx {
+    box-shadow: 0 0 5px lightgray;
+}
+
+
+:root {
+    ---primary-color: #c0392b;
+    ---secondary-color: #080808;
+
+}
+
+.primary-color {
+    color: var(---primary-color);
+}
+
+.secondary-color {
+    color: var(---secondary-color);
+}
+
+.primary-bg {
+    background-color: var(---primary-color);
+}
+
+.secondary-bg {
+    background-color: var(---secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.top-con {
+    background-color: #2b2a29;
+    min-height: 35px;
+}
+
+.bd-right {
+    border-right: 1px solid yellowgreen;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(---primary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+
+#menu-toggle-lable {
+    cursor: pointer;
+}
+
+.menu-toggle {
+    width: 25px;
+    height: 4px;
+    color: black;
+    background-color: black;
+    margin: 1.8px 0;
+    transition: all 0.2s ease-in;
+    position: relative;
+}
+
+#menu-toggle:checked~#menu-toggle-lable #menu-toggle-1 {
+    transform: rotate(45deg);
+    top: 3px;
+}
+
+#menu-toggle:checked~#menu-toggle-lable #menu-toggle-2 {
+    display: none;
+}
+
+#menu-toggle:checked~#menu-toggle-lable #menu-toggle-3 {
+    transform: rotate(-45deg);
+    top: -3px;
+}
+
+.top-section-bg {
+    background-color: var(---primary-color);
+}
+
+.carousel-item {
+    color: white;
+}
+
+.carousel-img {
+    height: 550px;
+}
+
+.services-bg {
+    background-image: url("../img/products-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.services-img {
+    width: 25%;
+
+}
+
+.dotted {
+    border: 1px dotted var(---secondary-color);
+}
+
+.service-text {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.srvices-btn {
+    color: white;
+    background-color: var(---secondary-color);
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.srvices-btn:hover {
+    background-color: var(---primary-color);
+    color: black;
+}
+
+
+
+.presence {
+    border: 1px solid var(---secondary-color);
+
+}
+
+.presence-div {
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    border: 2px solid var(---primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.presence-div img {
+    background-color: bisque;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.testimo-bg {
+    background-image: url(../img/ts-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-inner::after {
+    content: "";
+    background-image: url("../img/ts-box-bg.png");
+    top: 20px;
+    position: relative;
+}
+
+.carsoulbtn {
+    background-color: rgba(red, green, blue, 0.13);
+    background-color: green;
+    border-radius: 100%;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+.footer-text-bd-half {
+    position: relative;
+}
+
+.footer-text-bd-half::after {
+    content: "";
+    height: 3px;
+    width: 55px;
+    position: absolute;
+    background-color: var(---secondary-color);
+    margin-top: 35px;
+    text-align: center;
+    left: 0;
+
+}
+
+.footer-ul li {
+    list-style: none;
+
+}
+
+.footer-ul li a {
+    color: var(---secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-ul li a:hover {
+    border-bottom: 1px solid var(---secondary-color);
+}
+
+.footer-icon-con {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3 linear;
+    padding: 16px;
+
+}
+
+.footer-icon-con i {
+    font-size: 14px;
+
+}
+
+.footer-icon-con:hover {
+    background-color: var(---secondary-color);
+
+}
+
+.footer-icon-con:hover i {
+    color: var(---primary-color);
+
+}
+
+/* login modal */
+.login-modal-bd {
+    border: 1px solid var(---secondary-color);
+}
+
+.close-login {
+    right: 2.3%;
+}
+
+#loginbtn {
+    cursor: pointer;
+}
+
+#loginmodal {
+    top: -3000px;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+}
+
+.login-inputbox:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.login-bx-sh {
+    box-shadow: 0 0 5px lightgray;
+}
+
+.login-btn {
+    color: white;
+    background-color: var(---secondary-color);
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: var(---primary-color);
+}
+
+/* register page */
+.bg-register {
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+}
+
+/* brand images */
+.brand-img {
+    width: 40%;
+}
+
+
+/* partner with us */
+.partner-section {
+    box-shadow: 0 0 5px lightgray;
+
+}
+
+.partener-form input {
+    border: none;
+    border-bottom: 1px solid var(---secondary-color);
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    outline: none;
+}
+
+.partener-form input:focus {
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid var(---secondary-color);
+    transition: all 0.2s linear;
+}
+
+
+.field-ptr-form input:not(:focus)+label,
+.field-ptr-form input:not(:placeholder-shown)+label {
+    position: relative;
+    top: -20px;
+}
+
+.partner-option {
+    border: none;
+    border-bottom: 1px solid var(---secondary-color);
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Appointment Section */
+.appointment-section {
+    background-image: url("../img/appointment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* services section page */
+.services-section {
+    background-image: url("../img/services-car.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.section-services {
+    position: relative;
+    background-color: red;
+}
+
+.main-s {
+    top: -10vh;
+    position: relative;
+}
+
+
+
+
+
+
+#img-1,
+#img-s,
+#img-2,
+#img-3 {
+    transform:perspective(1000px) translateX(-500px);
+    mix-blend-mode: multiply;
+}
+#content-1,
+#content-s,
+#content-2,
+#content-3{
+    transform:perspective(1000px) translateX(500px);
+    
+}
+

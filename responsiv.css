@@ -1,0 +1,79 @@
+@import url("./style.css");
+:root{
+    ---responsive:1920;
+   
+}
+
+.presence{
+    width: calc((385/var(---responsive))*100*1vw);
+}
+.service-colum{
+    width:calc((380/var(---responsive))*100*1vw); ;
+}
+.service-colum{
+   height: 150px;
+   transition: transform 0.2s linear;
+}
+.service-colum:hover{
+    transform: scale(1.05);
+}
+.testimo-carousel{
+    width: 75%;
+}
+
+@media (max-width:840px){
+
+    :root{
+        ---responsive:1920;
+    }
+    .presence{
+        width: calc((420/var(---responsive))*100*1vw);
+    }
+    .service-colum{
+        width:calc((380/var(---responsive))*100*1vw); ;
+    }
+    
+}
+@media (max-width:540px){
+
+    :root{
+        ---responsive:375;
+    }
+    .nav-540{
+        width: 100%!important;
+    }
+    .carousel-img{
+        height: calc((120/var(---responsive))*100*1vh);
+       
+    }
+    .presence{
+        width: calc((1000/var(---responsive))*100*1vw);
+    }
+    .bg-540{
+        transition:all 0.2s linear;
+        background-color:var(---primary-color);
+    }
+    .bd-540{
+        box-shadow: 2px 2px 2px var(---secondary-color);
+    }
+    .service-colum{
+        width:47%;
+    }
+    
+    .testimo-carousel{
+        width: 100%;
+    }
+    .footer-text-bd-half::after {
+     display: none;
+    }
+    .service-colum:hover>.service-show-colum{
+        z-index: 1000;
+        height: 50%;
+        width: 47%;
+        transform: scaleY(1);
+        
+        }
+    
+
+    
+}
